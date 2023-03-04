@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Sofia", sans-serif;
+}
+.playerIndicatorContainer{
+    position: absolute;
+    width: 30vw;
+    height: 50px;
+    left: 35%;
+    top: 10%;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    backdrop-filter: blur(5px);
+}
+#playerColor{
+    display: flex;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: black;
+    margin-right: 5px;
+}
+span,h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#gameOver{
+    display: flex;
+    position: absolute;
+    height: 100vh;
+    width: 0;
+    backdrop-filter: blur(5px);
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+.resetContainer{
+    width: 80%;
+    height: 30%;
+    background-color: rgb(247, 252, 188);
+    border-radius: 5px;
+    box-shadow: 0 0 5px 5px white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+#playerwon{
+    display: flex;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: black;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+#reset{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 100px;
+    background-color: rgb(226, 165, 74);
+    border-radius: 50px;
+    box-shadow: 0 0 5px 5px rgb(131, 128, 128);
+}
+i{
+    margin-left: 10px;
+}
+#playerColorContainer{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 30vw;
+    height: 6vh;
+    position: absolute;
+    top: 16%;
+    right: 35%;
+    border-radius: 5px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 3px 3px rgb(131, 128, 128);
+    overflow: hidden;
+    transition: 0.5s all ease-in-out;
+}
+#p1,.p2{
+    display: flex;
+    height: 50%;
+    width: 30%;
+    border-radius: 50%;
+    background-color: white;
+    margin-right: 10px;
+    margin-left: 10px;
+    outline: none;
+    box-shadow: none;
+    
+}
+input[type="color"] {
+	-webkit-appearance: none;
+	border: none;
+	width: 32px;
+}

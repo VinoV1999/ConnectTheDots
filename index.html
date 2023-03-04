@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Straight Line</title>
+</head>
+
+<body ontouchstart="touchst(event)" ontouchmove="touchmove(event)" ontouchend="touchend()">
+    <div class="playerIndicatorContainer">
+        <span>
+            <div id="playerColor"></div>
+            <h3>Turn</h3>
+            <!-- <i onclick="playerColorEnable()" class="fa fa-edit"></i> -->
+        </span>
+    </div>
+    <!-- <div id="playerColorContainer">
+        <input type="color" onchange="p1change()" id="p1" value="#ff0000">
+        <input type="color" onchange="p2change()" id="p1" value="#0000ff">
+    </div> -->
+    <div id="gameOver">
+        <div class="resetContainer">
+            <span><h3>Player <div id="playerwon"></div> Won</h3></span>
+            <div id="reset" onclick="gameReset()">
+                <h3>Reset</h3>
+            </div>
+        </div>
+    </div>
+    <canvas id="canvasID">
+
+    </canvas>
+    <script src="index.js"></script>
+</body>
+
+</html>
