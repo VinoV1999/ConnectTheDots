@@ -42,9 +42,7 @@ canvas.addEventListener('click', (event) => {
                 let tempy = COINSPLACES[tempposition].y;
                 if (event.clientX < tempx + 50 && event.clientX > tempx - 50 && event.clientY < tempy + 50 && event.clientY > tempy - 50) {
                     coinPositionArray[tempposition] = color == p1 ? 1 : 2;
-                    console.log("Before : ",color);
                     if(count>3&&isInvalidPlacement(tempposition)) return;
-                    console.log("After : ",color);
                     count++;
                     c.lineWidth = 10;
                     c.arc(tempx, tempy, 7.5, 0, Math.PI * 2, false);
